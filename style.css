@@ -1,77 +1,21 @@
-/* BACKGROUND UMUM UNTUK HALAMAN LAIN (POLOS / BERSIH) */
-/* BACKGROUND FOTO KHUSUS UNTUK HALAMAN BERANDA SAJA */
-/* BANNER UTAMA (KOTAK BIRU TRANSPARAN DI TENGAH BERANDA) */
+/* BACKGROUND SELURUH HALAMAN */
 body {
-  background-color: #f4f6f9;
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-body.page-beranda {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/beranda.jpg');
+  background-image: url('images/beranda.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-}
-/* Header & Navigasi */
-header {
-  background-color: #003366; /* Biru Tua Sekolah */
-  color: white;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav ul {
-  list-style: none;
+  background-attachment: fixed; /* Agar gambar diam saat di-scroll */
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  display: flex;
-  gap: 15px;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #ffcc00; /* Warna Kuning Emas saat kursor di atas menu */
-}
-
-/* BANNER UTAMA (DIBUAT KOTAK BIRU TRANSPARAN DI TENGAH) */
-.hero {
-  background-color: rgba(0, 51, 102, 0.85);
-  max-width: 800px;
-  margin: 40px auto 20px auto;
-  padding: 30px 20px;
-  border-radius: 8px;
-  color: white;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-/* Konten Utama */
-main {
-  padding: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
+/* KOTAK KONTEN PUTIH (Dibuat agak transparan sedikit agar estetik) */
 .card {
-  background: white;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.95); /* Warna putih semi-transparan */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-/* Footer */
-footer {
-  background-color: #002244;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
