@@ -1,4 +1,9 @@
-/* STYLE UMUM HALAMAN (Polos/Default) */
+/* RESET BORDER & PADDING */
+* {
+  box-sizing: border-box;
+}
+
+/* STYLE UMUM HALAMAN (Default tanpa background foto) */
 body {
   background-color: #f4f6f9;
   font-family: Arial, sans-serif;
@@ -15,11 +20,11 @@ body.home-page {
   background-repeat: no-repeat;
 }
 
-/* HEADER BIRU */
+/* HEADER BIRU (SMPN 1 DI KIRI, MENU DI KANAN) */
 header {
   background-color: #004080;
   color: white;
-  padding: 15px 30px;
+  padding: 15px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,8 +60,9 @@ nav a:hover {
   background-color: rgba(0, 64, 128, 0.85);
   color: white;
   text-align: center;
-  padding: 40px 20px;
-  margin: 40px auto 20px auto;
+  padding: 30px 20px;
+  margin: 30px auto 20px auto;
+  width: 90%;
   max-width: 800px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
@@ -67,21 +73,24 @@ nav a:hover {
   background-color: rgba(255, 255, 255, 0.95);
   padding: 25px;
   margin: 20px auto;
+  width: 90%;
   max-width: 800px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* PENGATURAN GALERI FOTO SAMA UKURAN */
+/* PENGATURAN GALERI FOTO */
 .gallery-container {
   display: flex;
   flex-direction: column;
   gap: 25px;
   margin-top: 20px;
+  align-items: center;
 }
 
 .gallery-item {
   text-align: center;
+  width: 100%;
 }
 
 .gallery-item img {
@@ -106,4 +115,38 @@ footer {
   text-align: center;
   padding: 15px;
   margin-top: 50px;
+}
+
+/* ========================================== */
+/* PENGATURAN KHUSUS LAYAR HP (MOBILE RESPONSIVE) */
+/* ========================================== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Menu pindah ke bawah judul SMPN 1 */
+    gap: 12px;
+    text-align: center;
+    padding: 15px 10px;
+  }
+
+  nav ul {
+    flex-wrap: wrap; /* Jika menu banyak, otomatis lanjut ke baris baru */
+    justify-content: center;
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .hero h1 {
+    font-size: 20px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .gallery-item img {
+    height: 220px; /* Di HP tinggi gambar disesuaikan agar tidak gepeng/terlalu tinggi */
+  }
 }
