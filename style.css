@@ -1,4 +1,4 @@
-/* STYLE UMUM HALAMAN (Default tanpa background foto) */
+/* STYLE UMUM HALAMAN (Polos/Default) */
 body {
   background-color: #f4f6f9;
   font-family: Arial, sans-serif;
@@ -6,7 +6,7 @@ body {
   padding: 0;
 }
 
-/* BACKGROUND FOTO KHUSUS HALAMAN BERANDA */
+/* BACKGROUND FOTO KHUSUS BERANDA */
 body.home-page {
   background-image: url('/smpn1mindiptana/images/beranda.jpg');
   background-size: cover;
@@ -50,7 +50,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* BANNER HERO */
+/* BANNER HERO BERANDA */
 .hero {
   background-color: rgba(0, 64, 128, 0.85);
   color: white;
@@ -86,9 +86,9 @@ nav a:hover {
 
 .gallery-item img {
   width: 100%;
-  max-width: 600px; /* Lebar maksimal foto */
-  height: 350px;    /* Tinggi disamakan untuk semua foto */
-  object-fit: cover; /* Agar foto terpotong rapi tanpa terdistorsi/gepeng */
+  max-width: 600px;
+  height: 350px;
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
@@ -99,7 +99,7 @@ nav a:hover {
   color: #333;
 }
 
-/* FOOTER */
+/* FOOTER BIRU */
 footer {
   background-color: #004080;
   color: white;
