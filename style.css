@@ -1,16 +1,21 @@
-/* BACKGROUND SELURUH HALAMAN (FOTO SEKOLAH) */
+/* STYLE UMUM HALAMAN (Default tanpa background foto) */
 body {
-  background-image: url('/smpn1mindiptana/images/beranda.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-color: #f4f6f9;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* HEADER BIRU (SMPN 1 DI KIRI, MENU DI KANAN) */
+/* BACKGROUND FOTO KHUSUS HALAMAN BERANDA */
+body.home-page {
+  background-image: url('/smpn1mindiptana/images/beranda.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* HEADER BIRU */
 header {
   background-color: #004080;
   color: white;
@@ -26,13 +31,12 @@ header h2 {
   font-size: 20px;
 }
 
-/* MENU NAVIGASI */
 nav ul {
-  list-style: none; /* Menghilangkan titik/bullet */
+  list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 20px; /* Jarak antar menu */
+  gap: 20px;
 }
 
 nav a {
@@ -46,9 +50,9 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* BANNER UTAMA (HERO SECTION) */
+/* BANNER HERO */
 .hero {
-  background-color: rgba(0, 64, 128, 0.85); /* Box biru transparan */
+  background-color: rgba(0, 64, 128, 0.85);
   color: white;
   text-align: center;
   padding: 40px 20px;
@@ -58,10 +62,6 @@ nav a:hover {
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-.hero h1 {
-  margin-top: 0;
-}
-
 /* KOTAK KONTEN PUTIH */
 .card {
   background-color: rgba(255, 255, 255, 0.95);
@@ -69,10 +69,37 @@ nav a:hover {
   margin: 20px auto;
   max-width: 800px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* FOOTER BIRU */
+/* PENGATURAN GALERI FOTO SAMA UKURAN */
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  max-width: 600px; /* Lebar maksimal foto */
+  height: 350px;    /* Tinggi disamakan untuk semua foto */
+  object-fit: cover; /* Agar foto terpotong rapi tanpa terdistorsi/gepeng */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.gallery-item p {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* FOOTER */
 footer {
   background-color: #004080;
   color: white;
