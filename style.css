@@ -1,41 +1,45 @@
-/* BACKGROUND SELURUH HALAMAN */
+/* BACKGROUND SELURUH HALAMAN (FOTO SEKOLAH) */
 body {
   background-image: url('/smpn1mindiptana/images/beranda.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Agar gambar diam saat di-scroll */
+  background-attachment: fixed;
   background-repeat: no-repeat;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* HEADER & NAVIGASI */
+/* HEADER BIRU (SMPN 1 DI KIRI, MENU DI KANAN) */
 header {
   background-color: #004080;
   color: white;
-  padding: 1rem 2rem;
+  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 header h2 {
   margin: 0;
+  font-size: 20px;
 }
 
+/* MENU NAVIGASI */
 nav ul {
-  list-style: none;
+  list-style: none; /* Menghilangkan titik/bullet */
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 15px;
+  gap: 20px; /* Jarak antar menu */
 }
 
 nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-size: 15px;
 }
 
 nav a:hover {
@@ -44,14 +48,14 @@ nav a:hover {
 
 /* BANNER UTAMA (HERO SECTION) */
 .hero {
-  background-color: rgba(0, 64, 128, 0.85); /* Biru transparan agar estetik di atas background foto */
+  background-color: rgba(0, 64, 128, 0.85); /* Box biru transparan */
   color: white;
   text-align: center;
   padding: 40px 20px;
-  margin: 30px auto 10px auto;
-  max-width: 900px;
+  margin: 40px auto 20px auto;
+  max-width: 800px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 .hero h1 {
@@ -60,19 +64,19 @@ nav a:hover {
 
 /* KOTAK KONTEN PUTIH */
 .card {
-  background-color: rgba(255, 255, 255, 0.95); /* Warna putih semi-transparan */
-  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 25px;
   margin: 20px auto;
-  max-width: 900px;
+  max-width: 800px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* FOOTER */
+/* FOOTER BIRU */
 footer {
   background-color: #004080;
   color: white;
   text-align: center;
-  padding: 10px;
-  margin-top: 40px;
+  padding: 15px;
+  margin-top: 50px;
 }
