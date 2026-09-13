@@ -1,6 +1,6 @@
 /* BACKGROUND SELURUH HALAMAN */
 body {
-  background-image: url('images/beranda.jpg');
+  background-image: url('/smpn1mindiptana/images/beranda.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Agar gambar diam saat di-scroll */
@@ -10,7 +10,55 @@ body {
   padding: 0;
 }
 
-/* KOTAK KONTEN PUTIH (Dibuat agak transparan sedikit agar estetik) */
+/* HEADER & NAVIGASI */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* BANNER UTAMA (HERO SECTION) */
+.hero {
+  background-color: rgba(0, 64, 128, 0.85); /* Biru transparan agar estetik di atas background foto */
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin: 30px auto 10px auto;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.hero h1 {
+  margin-top: 0;
+}
+
+/* KOTAK KONTEN PUTIH */
 .card {
   background-color: rgba(255, 255, 255, 0.95); /* Warna putih semi-transparan */
   padding: 20px;
@@ -18,4 +66,13 @@ body {
   max-width: 900px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
 }
